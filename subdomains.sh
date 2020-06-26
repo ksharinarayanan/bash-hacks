@@ -6,6 +6,8 @@ magenta=`tput setaf 5`
 cyan=`tput setaf 6`
 reset=`tput sgr0`
 
+source ~/.profile
+
 while getopts "d:" opt
 do
 	case "${opt}" in
@@ -42,7 +44,7 @@ fi
 echo -e "\n${yellow}[+] Starting amass${reset}\n"
 
 if [[ ! -f $location/amass-$target ]]; then
-	amass enum -d $target -o $location/amass-$target
+	amass enum --passive -d $target -o $location/amass-$target
 	echo -e "\n${green}[-] Amass done${reset}"
 else
 	echo -e "${cyan}Amass already done${reset}"
@@ -66,6 +68,14 @@ else
 	echo -e "${cyan}Assetfinder already done\n${reset}"
 fi
 
+echo -e "\n${yellow}[+] Starting chaos${reset}\n"
+
+if [[ ! -f $location/chaos-$target ]]; then
+	chaos -d $target | tee $location/chaos-$target
+else
+	echo -e "${cyan}Chaos already done\n${reset}"
+fi
+
 echo -e "\n${yellow}[+] Starting subdomainizer${reset}\n"
 
 if [[ ! -f $location/subdomainizer-$target ]]; then
@@ -75,7 +85,20 @@ else
 	echo -e "${cyan}Subdomainizer already done${reset}\n"
 fi
 
+echo -e "\n${yellow}[+] Starting github subdomains\n${reset}"
+
+if [[ ! -f $location/github-subdomains-$target ]]; then
+	python3 ~/tools/github-search/github-subdomains.py -d $target -t $GITHUB_TOKEN | tee $location/github-subdomains-$target
+	echo -e "\n${green}[-] Github subdomains done${reset}"
+else
+	echo -e "\n${cyan}Github subdomains already done${reset}\n"
+fi
+
 echo -e "\n\n${green}The final list of subdomains are:\n${yellow}"
 cat $location/* | sort -u | tee $location/$target-subdomains
 echo "${reset}"
-sed 's/^/http:\/\//' -i $location/$target-subdomains > $location/http-$target-subdomains
+total=$(cat $location/$target-subdomains | grep -c "")
+echo -e "\n\nTotal subdomains found: $total\n"
+
+
+
