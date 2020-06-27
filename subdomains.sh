@@ -39,11 +39,11 @@ location=~/.recon-data/$target/subdomains
 if [[ -d ~/.recon-data/$target/subdomains ]]; then
 	read -p "The target's data already exists, do you want to start fresh, if no it continues from where you left(y/n): " input
 	if [[ $input == 'y' || $input == 'Y' ]]; then
-		rm -rf ~/.subdomains/$target/subdomains
+		rm -rf ~/.recon-data/$target/subdomains
 	fi
 fi
 if [[ ! -d ~/.recon-data/$target ]]; then
-	mkdir ~/.subdomains/$target
+	mkdir ~/.recon-data/$target
 fi
 
 if [[ ! -d ~/.recon-data/$target/subdomains ]]; then
@@ -109,6 +109,15 @@ if [[ ! -f $location/github-subdomains-$target ]]; then
 	echo -e "\n${green}[-] Github subdomains done${reset}"
 else
 	echo -e "\n${cyan}Github subdomains already done${reset}\n"
+fi
+
+if [[ ! -d $location/crawl-data ]]; then
+
+	read -p "Should I run the linkfinding module [y/n]: " input
+
+	if [[ $input == 'Y' || $input == 'y' ]]; then
+		gospider -s $location/
+	fi
 fi
 
 echo -e "\n\n${green}The final list of subdomains are:\n${yellow}"
