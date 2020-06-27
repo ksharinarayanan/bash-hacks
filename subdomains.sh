@@ -21,16 +21,33 @@ if [[ $target == "" ]]; then
 	exit 2
 fi
 
-location=~/.subdomains/$target
+if [[ $target == "list" ]]; then
+	targets=$(ls ~/.recon-data/)
+	for t in $targets; do
+		if [[ -f ~/.recon-data/$t/subdomains/$t-subdomains ]]; then
+			l=$(cat ~/.recon-data/$t/subdomains/$t-subdomains | grep -c "")
+			echo "$t - $l subdomains"
+		else
+			echo "${red}$t scanning not complete${reset}"
+		fi
+	done
+	exit 2
+fi
 
-if [[ -d ~/.subdomains/$target ]]; then
+location=~/.recon-data/$target/subdomains
+
+if [[ -d ~/.recon-data/$target/subdomains ]]; then
 	read -p "The target's data already exists, do you want to start fresh, if no it continues from where you left(y/n): " input
 	if [[ $input == 'y' || $input == 'Y' ]]; then
-		rm -rf ~/.subdomains/$target
+		rm -rf ~/.subdomains/$target/subdomains
 	fi
 fi
-if [[ ! -d ~/.subdomains/$target ]]; then
+if [[ ! -d ~/.recon-data/$target ]]; then
 	mkdir ~/.subdomains/$target
+fi
+
+if [[ ! -d ~/.recon-data/$target/subdomains ]]; then
+	mkdir ~/.recon-data/$target/subdomains
 fi
 
 echo -e "\n${yellow}[+] Starting subfinder${reset}\n"
@@ -79,7 +96,7 @@ fi
 echo -e "\n${yellow}[+] Starting subdomainizer${reset}\n"
 
 if [[ ! -f $location/subdomainizer-$target ]]; then
-	python3 ~/tools/SubDomainizer/SubDomainizer.py -u $target -g -gt f236a11e6591955df4b985b83ead43eff4f9bd5e -o $location/subdomainizer-$target
+	python3 ~/tools/SubDomainizer/SubDomainizer.py -u $target -g -gt $GITHUB_API_KEY -o $location/subdomainizer-$target
 	echo -e "\n${green}[-] Subdomainizer done${reset}"
 else
 	echo -e "${cyan}Subdomainizer already done${reset}\n"
@@ -95,7 +112,7 @@ else
 fi
 
 echo -e "\n\n${green}The final list of subdomains are:\n${yellow}"
-cat $location/* | sort -u | tee $location/$target-subdomains
+cat $location/* | sort -u | grep $target | tee $location/$target-subdomains
 echo "${reset}"
 total=$(cat $location/$target-subdomains | grep -c "")
 echo -e "\n\nTotal subdomains found: $total\n"
