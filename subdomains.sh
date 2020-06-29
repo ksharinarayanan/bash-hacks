@@ -6,7 +6,7 @@ magenta=`tput setaf 5`
 cyan=`tput setaf 6`
 reset=`tput sgr0`
 
-source ~/.profile
+source ~/.bash_aliases
 
 while getopts "d:" opt
 do
@@ -41,7 +41,7 @@ subLocation=~/.recon-data/$target/subdomains
 if [[ -d ~/.recon-data/$target/subdomains ]]; then
 	read -p "The target's data already exists, do you want to start fresh, if no it continues from where you left(y/n): " input
 	if [[ $input == 'y' || $input == 'Y' ]]; then
-		rm -rf ~/.recon-data/$target/subdomains
+		rm -rf ~/.recon-data/$target
 	fi
 fi
 if [[ ! -d ~/.recon-data/$target ]]; then
@@ -131,12 +131,11 @@ if [[ ! -d $domainHeart/crawl-data ]]; then
 		if [[ -f $subLocation/$target-subdomains ]]; then
 			echo -e "\n${yellow}[+] Starting linkfinding${reset}\n"
 			mkdir $domainHeart/crawl-data
-			~/tools/bash-hacks/./add-http.sh $subLocation/$target-subdomains > $subLocation/http-$target-subdomains
-			gospider --sites $subLocation/http-$target-subdomains -t 20 -c 10 --include-subs --include-other-source -o $domainHeart/crawl-data
+			~/tools/bash-hacks/./add-http.sh $subLocation/$target-subdomains > $domainHeart/crawl-data/http-$target-subdomains
+			gospider --sites $domainHeart/crawl-data/http-$target-subdomains -t 20 -c 10 --include-subs --include-other-source -o $domainHeart/crawl-data
 			cat $domainHeart/crawl-data/* | sort -u > $domainHeart/crawl-data/final-results
 			echo -e "\n${yellow}The subdomains found crawling are: \n${reset}"
 			cat $domainHeart/crawl-data/* | sort -u | grep subdomains | cut -d - -f 2 | cut -d " " -f 2 | tee $subLocation/crawl-subdomains
-			rm $subLocation/http-$target-subdomains
 			cat $subLocation/* | sort -u > $subLocation/$target-subdomains
 			echo -e "\n${green}[-] Linkfinding done${reset}\n"
 		else
