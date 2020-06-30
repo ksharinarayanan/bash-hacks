@@ -69,6 +69,15 @@ else
 	echo -e "${cyan}Amass already done${reset}"
 fi
 
+echo -e "\n${yellow}[+] Starting crt.sh${reset}\n"
+
+if [[ ! -f $subLocation/crtsh-$target ]]; then
+	crtsh $target | tee $subLocation/crtsh-$target
+	echo -e "\n${green}[-] crt.sh done${reset}"
+else
+	echo -e "${cyan}crt.sh already done\n${reset}"
+fi
+
 echo -e "\n${yellow}[+] Starting findomain${reset}\n"
 
 if [[ ! -f $subLocation/findomain-$target ]]; then
