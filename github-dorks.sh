@@ -21,9 +21,9 @@ fi
 
 while IFS= read -r dork; do
 	if [[ $additional != "" ]]; then
-		echo "https://github.com/search?q=\"${organization}\"+${dork}+${additional}&type=Code"
+		echo "https://github.com/search?o=desc&q=\"${organization}\"+${dork}+${additional}&s=indexed&type=Code"
 	else
-		echo "https://github.com/search?q=\"${organization}\"+${dork}&type=Code"
+		echo "https://github.com/search?o=desc&q=\"${organization}\"+${dork}+&s=indexed&type=Code"
 	fi
 done < dorks.txt
 
