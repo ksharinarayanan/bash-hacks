@@ -130,7 +130,20 @@ echo -e "\n\nTotal subdomains found: $total\n"
 
 domainHeart=~/.recon-data/$target
 
+read -p "Should I run meg [y/n]: " input
 
+if [[ $input == 'y' || $input == 'Y' ]]; then
+
+	if [[ ! -d $domainHeart/meg-output ]]; then
+		echo -e "${yellow}[+] Running meg${reset}\n"
+
+		mkdir $domainHeart/meg-output
+		add-http $subLocation/$target-subdomains > $domainHeart/http-domains
+		meg -L / $domainHeart/http-domains $domainHeart/meg-output 
+
+		echo -e "${green}\n[-] Meg done\n${reset}"
+	fi
+fi
 
 if [[ ! -d $domainHeart/crawl-data ]]; then
 

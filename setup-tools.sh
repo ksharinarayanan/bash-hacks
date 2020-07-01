@@ -26,8 +26,14 @@ go get -u github.com/tomnomnom/assetfinder
 echo -e "\n${green}[-] Installed assetfinder${reset}\n"
 
 echo -e "\n${yellow}[+] Installing findomain${reset}\n"
+<<<<<<< HEAD
 
 mkdir ~/tools
+=======
+if [[ ! -d ~/tools/ ]]; then
+	mkdir ~/tools
+fi
+>>>>>>> 71ff2f929e6ee3d2ffe4dda52afc398a3dbed43d
 wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux
 chmod +x findomain-linux
 
