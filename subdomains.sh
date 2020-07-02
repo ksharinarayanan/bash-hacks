@@ -27,7 +27,11 @@ if [[ $target == "list" ]]; then
 	for t in $targets; do
 		if [[ -f ~/.recon-data/$t/subdomains/$t-subdomains ]]; then
 			l=$(cat ~/.recon-data/$t/subdomains/$t-subdomains | grep -c "")
-			echo "$t - $l subdomains"
+			if [[ -d ~/.recon-data/$t/httpx && -f ~/.recon-data/$t/httpx/result ]]; then
+				echo "$t - $l subdomains $(count ~/.recon-data/$t/httpx/result)"
+			else
+				echo "$t - $l subdomains"
+			fi
 		else
 			echo "${red}$t - scanning not complete${reset}"
 		fi
@@ -140,7 +144,7 @@ if [[ ! -d $domainHeart/httpx ]]; then
 		curr=$(pwd)
 		mkdir $domainHeart/httpx
 		cd $domainHeart/httpx
-		httpx -l $subLocation/$target-subdomains -store-response -title -status-code -t 77 -silent
+		httpx -l $subLocation/$target-subdomains -store-response -title -status-code -t 77 -silent | tee result
 		cd $curr
 		echo -e "${green}\n[-] httpx done\n${reset}"
 	fi
