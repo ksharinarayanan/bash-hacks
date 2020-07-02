@@ -130,18 +130,19 @@ echo -e "\n\nTotal subdomains found: $total\n"
 
 domainHeart=~/.recon-data/$target
 
-read -p "Should I run meg [y/n]: " input
+if [[ ! -d $domainHeart/httpx ]]; then
 
-if [[ $input == 'y' || $input == 'Y' ]]; then
+	read -p "Should I run httpx [y/n]: " input
 
-	if [[ ! -d $domainHeart/meg-output ]]; then
-		echo -e "${yellow}[+] Running meg${reset}\n"
+	if [[ $input == 'y' || $input == 'Y' ]]; then
 
-		mkdir $domainHeart/meg-output
-		add-http $subLocation/$target-subdomains > $domainHeart/http-domains
-		meg -L / $domainHeart/http-domains $domainHeart/meg-output 
-
-		echo -e "${green}\n[-] Meg done\n${reset}"
+		echo -e "${yellow}[+] Running httpx${reset}\n"
+		curr=$(pwd)
+		mkdir $domainHeart/httpx
+		cd $domainHeart/httpx
+		httpx -l $subLocation/$target-subdomains -store-response -title -status-code -t 77 -silent
+		cd $curr
+		echo -e "${green}\n[-] httpx done\n${reset}"
 	fi
 fi
 
