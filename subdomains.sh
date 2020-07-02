@@ -28,9 +28,9 @@ if [[ $target == "list" ]]; then
 		if [[ -f ~/.recon-data/$t/subdomains/$t-subdomains ]]; then
 			l=$(cat ~/.recon-data/$t/subdomains/$t-subdomains | grep -c "")
 			if [[ -d ~/.recon-data/$t/httpx && -f ~/.recon-data/$t/httpx/result ]]; then
-				echo "$t - $l subdomains $(count ~/.recon-data/$t/httpx/result)"
+				echo "$yellow$t - $l subdomains $green( LIVE - $(count ~/.recon-data/$t/httpx/result) )$reset"
 			else
-				echo "$t - $l subdomains"
+				echo "$cyan$t - $l subdomains$reset"
 			fi
 		else
 			echo "${red}$t - scanning not complete${reset}"
