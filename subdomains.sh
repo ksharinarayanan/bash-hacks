@@ -58,7 +58,7 @@ fi
 
 echo -e "\n${yellow}[+] Starting subfinder${reset}\n"
 if [[ ! -f $subLocation/subfinder-$target ]]; then
-	subfinder -d $target | tee $subLocation/subfinder-$target
+	subfinder -d $target -silent | tee $subLocation/subfinder-$target
 	echo -e "\n${green}[-] Subfinder done${reset}"
 else
 	echo -e "${cyan}Subfinder already done${reset}"
@@ -85,7 +85,7 @@ fi
 echo -e "\n${yellow}[+] Starting findomain${reset}\n"
 
 if [[ ! -f $subLocation/findomain-$target ]]; then
-	findomain -t $target -u $subLocation/findomain-$target
+	findomain -q -t $target -u $subLocation/findomain-$target
 	echo -e "\n${green}[-] Findomain done${reset}"
 else
 	echo -e "${cyan}Findomain already done\n${reset}"
@@ -103,7 +103,7 @@ fi
 echo -e "\n${yellow}[+] Starting chaos${reset}\n"
 
 if [[ ! -f $subLocation/chaos-$target ]]; then
-	chaos -d $target | tee $subLocation/chaos-$target
+	chaos -d $target -silent | tee $subLocation/chaos-$target
 else
 	echo -e "${cyan}Chaos already done\n${reset}"
 fi
@@ -177,7 +177,7 @@ if [[ ! -f $domainHeart/ports ]]; then
 	if [[ $input == 'y' ]]; then
 		if [[ -f $subLocation/$target-subdomains ]]; then
 			echo -e "\n${yellow}[+] Starting port scan ${reset}\n"
-			naabu -hL $subLocation/$target-subdomains -t 20 -o $domainHeart/ports
+			naabu -silent -hL $subLocation/$target-subdomains -t 20 -o $domainHeart/ports
 			echo -e "\n${green}[-] Port scanning completed${reset}\n"
 		else
 			echo "${red}Please complete the subdomain scan first!${reset}\n"
