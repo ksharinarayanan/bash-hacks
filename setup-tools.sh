@@ -131,6 +131,12 @@ go install -v github.com/lukasikic/subzy
 
 echo -e "\n${green}[-] Installed subzy${reset}\n"
 
+echo -e "\n${yellow}[+] Installing nuclei${reset}\n"
+
+GO111MODULE=on go get -u -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+
+echo -e "\n${green}[-] Installed nuclei${reset}\n"
+
 echo -e "${cyan}Happy hacking ~ !${reset}\n"
 
 

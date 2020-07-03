@@ -28,7 +28,7 @@ if [[ $target == "list" ]]; then
 		if [[ -f ~/.recon-data/$t/subdomains/$t-subdomains ]]; then
 			l=$(cat ~/.recon-data/$t/subdomains/$t-subdomains | grep -c "")
 			if [[ -d ~/.recon-data/$t/httpx && -f ~/.recon-data/$t/httpx/result ]]; then
-				echo "$yellow$t - $l subdomains $green( LIVE - $(count ~/.recon-data/$t/httpx/result) )$reset"
+				echo "$yellow$t - $l subdomains $green( LIVE - $(cat ~/.recon-data/$t/httpx/result | grep -v '\[4' | count) )$reset"
 			else
 				echo "$cyan$t - $l subdomains$reset"
 			fi
@@ -140,11 +140,11 @@ if [[ ! -d $domainHeart/httpx ]]; then
 
 	if [[ $input == 'y' || $input == 'Y' ]]; then
 
-		echo -e "${yellow}[+] Running httpx${reset}\n"
+		echo -e "\n${yellow}[+] Running httpx${reset}\n"
 		curr=$(pwd)
 		mkdir $domainHeart/httpx
 		cd $domainHeart/httpx
-		httpx -l $subLocation/$target-subdomains -store-response -title -status-code -t 77 -silent | tee result
+		httpx -l $subLocation/$target-subdomains -store-response -title -status-code -threads 77 -silent | tee result
 		cd $curr
 		echo -e "${green}\n[-] httpx done\n${reset}"
 	fi
