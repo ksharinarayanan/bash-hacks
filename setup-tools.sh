@@ -60,8 +60,8 @@ echo -e "\n${yellow}[+] Writing crt.sh to bash aliases${reset}\n"
 
 crtsh(){
 	curl -s https://crt.sh/?Identity=%.$1 | grep ">*.$1" | sed 's/<[/]*[TB][DR]>/\n/g' | grep -vE "<|^[\*]*[\.]*$1" | sort -u | awk 'NF'
-} >> .bash_aliases
-source .bash_aliases
+} >> ~/.bash_aliases
+source ~/.bash_aliases
 
 echo -e "\n${green}[-] Written crt.sh to bash aliases${reset}\n"
 

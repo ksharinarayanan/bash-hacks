@@ -6,7 +6,9 @@ magenta=`tput setaf 5`
 cyan=`tput setaf 6`
 reset=`tput sgr0`
 
-source ~/.bash_aliases
+if [[ -f ~/.bash_aliases ]]; then
+	source ~/.bash_aliases
+fi
 
 while getopts "d:" opt
 do
@@ -19,6 +21,17 @@ done
 if [[ $target == "" ]]; then
 	echo "Usage: ./subdomains.sh -d domain.com"
 	exit 2
+fi
+
+if [[ ! -d ~/.recon-data ]]; then
+        mkdir ~/.recon-data
+        echo -e "\n${green}Your output would be stored under ~/.recon-data/${reset}\n"
+	echo -e "\n${cyan}Make sure that you have subfinder, amass, assetfinder, findomain, github-subdomains.py, subdomainizer, httpx, gospider and naabu installed with github-subdomains.py and subdomainizer under the ~/tools directory${reset}\n"
+
+	crtsh(){
+	        curl -s https://crt.sh/?Identity=%.$1 | grep ">*.$1" | sed 's/<[/]*[TB][DR]>/\n/g' | grep -vE "<|^[\*]*[\.]*$1" | sort -u | awk 'NF'
+	} >> ~/.bash_aliases	
+	source ~/.bash_aliases
 fi
 
 if [[ $target == "list" ]]; then
