@@ -27,8 +27,8 @@ if [[ $target == "list" ]]; then
 	for t in $targets; do
 		if [[ -f ~/.recon-data/$t/subdomains/$t-subdomains ]]; then
 			l=$(cat ~/.recon-data/$t/subdomains/$t-subdomains | grep -c "")
-			if [[ -d ~/.recon-data/$t/httpx && -f ~/.recon-data/$t/httpx/result ]]; then
-				echo "$yellow$t - $l subdomains $green( LIVE - $(cat ~/.recon-data/$t/httpx/result | grep -v '\[4\|\[5' | count) )$reset"
+			if [[ -f ~/.recon-data/$t/live-domains ]]; then
+				echo "$yellow$t - $l subdomains $green( LIVE - $(count ~/.recon-data/$t/live-domains) )$reset"
 			else
 				echo "$cyan$t - $l subdomains$reset"
 			fi
@@ -145,7 +145,11 @@ if [[ ! -d $domainHeart/httpx ]]; then
 		mkdir $domainHeart/httpx
 		cd $domainHeart/httpx
 		httpx -l $subLocation/$target-subdomains -store-response -title -status-code -threads 77 -silent -no-color | tee result
+		echo -e "\n${cyan}The live domains are: \n$reset"
+		cat result | grep -v "\[4\|\[5" | cut -d [ -f 1 | tee $domainHeart/live-domains
+		echo -e "\n$reset"
 		cd $curr
+		
 		echo -e "${green}\n[-] httpx done\n${reset}"
 	fi
 fi
