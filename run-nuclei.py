@@ -11,7 +11,7 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 def usage():
-	print("python3 test.py -l list")
+	print("python3 run-nuclei.py -l list")
 
 def main():
     try:
