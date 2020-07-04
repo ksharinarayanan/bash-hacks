@@ -19,7 +19,7 @@ do
 	esac
 done
 if [[ $target == "" ]]; then
-	echo "Usage: ./subdomains.sh -d domain.com"
+	echo "Usage: ./bashed.sh -d domain.com"
 	exit 2
 fi
 
@@ -159,7 +159,7 @@ if [[ ! -d $domainHeart/httpx ]]; then
 		cd $domainHeart/httpx
 		httpx -l $subLocation/$target-subdomains -store-response -title -status-code -threads 77 -silent -no-color | tee result
 		echo -e "\n${cyan}The live domains are: \n$reset"
-		cat result | grep -v "\[4\|\[5" | cut -d [ -f 1 | tee $domainHeart/live-domains
+		cat result | grep -v "\[4\|\[5" | cut -d [ -f 1 | cut -d " " -f 1 | tee $domainHeart/live-domains
 		echo -e "\n$reset"
 		cd $curr
 		
