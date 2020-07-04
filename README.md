@@ -1,1 +1,1 @@
-## Just some handy bash scripts ! :)
+## Just some handy scripts ! :)
