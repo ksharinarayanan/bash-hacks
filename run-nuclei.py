@@ -1,4 +1,4 @@
-import getopt, sys, os
+import time, getopt, sys, os
 
 class bcolors:
     HEADER = '\033[95m'
@@ -27,15 +27,13 @@ def main():
         	list = a
         	templates = os.popen("ls ~/nuclei-templates/")
         	exclude = ["GUIDE.md", "LICENSE", "README.md", "brute-force", "examples"]
-
         	for template in templates:
         		if template[:-1] not in exclude:
-        			print(bcolors.WARNING + bcolors.BOLD + "Loading template " + template + bcolors.OKGREEN)
+        			print("\n" + bcolors.WARNING + bcolors.BOLD + "Running template " + template + bcolors.OKGREEN)
         			command = "nuclei -silent -t ~/nuclei-templates/" + template[:-1] + " -l " + list
         			# print(command)
         			os.system(command)
 
-        			print()
         elif o in ("-h", "--help"):
             usage()
             sys.exit()

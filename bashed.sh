@@ -198,4 +198,16 @@ if [[ ! -f $domainHeart/ports ]]; then
 	fi
 fi
 
+if [[ ! -f $domainHeart/nuclei-output ]]; then
+	read -p "Should I run nuclei [y/n]: " input
+	if [[ $input == 'y' || $input == 'Y' ]]; then
+		if [[ ! -f $domainHeart/live-domains ]]; then
+			echo -e "\n${red}You must run httpx to run nuclei${reset}\n"
+			exit 1
+		fi
+		echo -e "\n${cyan}Output is not saved!${reset}"
+		python3 ~/tools/bash-hacks/run-nuclei.py -l $domainHeart/live-domains
+	fi
+	
+fi
 
