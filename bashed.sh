@@ -206,9 +206,9 @@ if [[ ! -f $domainHeart/.nuclei-output ]]; then
 			echo -e "\n${red}You must run httpx to run nuclei${reset}\n"
 			exit 1
 		fi
-		touch $domainHeart/.nuclei-output
 		echo -e "\n${cyan}Output is not saved!${reset}"
 		python3 ~/tools/bash-hacks/run-nuclei.py -l $domainHeart/live-domains
+		touch $domainHeart/.nuclei-output
 	fi
 	
 fi
