@@ -30,7 +30,7 @@ def main():
         	for template in templates:
         		if template[:-1] not in exclude:
         			print("\n" + bcolors.WARNING + bcolors.BOLD + "Running template " + template + bcolors.OKGREEN)
-        			command = "nuclei -silent -t ~/nuclei-templates/" + template[:-1] + " -l " + list
+        			command = "nuclei -silent -c 77 -t ~/nuclei-templates/" + template[:-1] + " -l " + list
         			# print(command)
         			os.system(command)
 

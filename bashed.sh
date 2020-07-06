@@ -143,25 +143,6 @@ echo -e "\n\nTotal subdomains found: $total\n"
 
 domainHeart=~/.recon-data/$target
 
-if [[ ! -d $domainHeart/httpx ]]; then
-
-	read -p "Should I run httpx [y/n]: " input
-
-	if [[ $input == 'y' || $input == 'Y' ]]; then
-
-		echo -e "\n${yellow}[+] Running httpx${reset}\n"
-		curr=$(pwd)
-		mkdir $domainHeart/httpx
-		cd $domainHeart/httpx
-		httpx -l $subLocation/$target-subdomains -store-response -title -status-code -threads 77 -silent -no-color | tee result
-		echo -e "\n${cyan}The live domains are: \n$reset"
-		cat result | grep -v "\[4\|\[5" | cut -d [ -f 1 | cut -d " " -f 1 | tee $domainHeart/live-domains
-		echo -e "\n$reset"
-		cd $curr
-		
-		echo -e "${green}\n[-] httpx done\n${reset}"
-	fi
-fi
 
 if [[ ! -d $domainHeart/crawl-data ]]; then
 
@@ -184,6 +165,26 @@ if [[ ! -d $domainHeart/crawl-data ]]; then
 	fi
 fi
 
+if [[ ! -d $domainHeart/httpx ]]; then
+
+        read -p "Should I run httpx [y/n]: " input
+
+        if [[ $input == 'y' || $input == 'Y' ]]; then
+
+	       echo -e "\n${yellow}[+] Running httpx${reset}\n"
+	       curr=$(pwd)
+	       mkdir $domainHeart/httpx
+	       cd $domainHeart/httpx
+	       httpx -l $subLocation/$target-subdomains -store-response -title -status-code -threads 77 -silent -no-color | tee result
+	       echo -e "\n${cyan}The live domains are: \n$reset"
+	       cat result | grep -v "\[4\|\[5" | cut -d [ -f 1 | cut -d " " -f 1 | tee $domainHeart/live-domains
+       	       echo -e "\n$reset"
+               cd $curr
+               echo -e "${green}\n[-] httpx done\n${reset}"
+	fi
+fi
+
+
 if [[ ! -f $domainHeart/ports ]]; then
 	read -p "Should I port scan [y/n]: " input
 
@@ -198,13 +199,14 @@ if [[ ! -f $domainHeart/ports ]]; then
 	fi
 fi
 
-if [[ ! -f $domainHeart/nuclei-output ]]; then
+if [[ ! -f $domainHeart/.nuclei-output ]]; then
 	read -p "Should I run nuclei [y/n]: " input
 	if [[ $input == 'y' || $input == 'Y' ]]; then
 		if [[ ! -f $domainHeart/live-domains ]]; then
 			echo -e "\n${red}You must run httpx to run nuclei${reset}\n"
 			exit 1
 		fi
+		touch $domainHeart/.nuclei-output
 		echo -e "\n${cyan}Output is not saved!${reset}"
 		python3 ~/tools/bash-hacks/run-nuclei.py -l $domainHeart/live-domains
 	fi
