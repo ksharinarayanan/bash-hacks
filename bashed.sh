@@ -156,7 +156,7 @@ if [[ ! -d $domainHeart/crawl-data ]]; then
 			gospider --sites $domainHeart/crawl-data/http-$target-subdomains -t 20 -c 10 --include-subs --include-other-source -o $domainHeart/crawl-data
 			cat $domainHeart/crawl-data/* | sort -u > $domainHeart/crawl-data/final-results
 			echo -e "\n${yellow}The subdomains found crawling are: \n${reset}"
-			cat $domainHeart/crawl-data/* | sort -u | grep subdomains | cut -d - -f 2 | cut -d " " -f 2 | tee $subLocation/crawl-subdomains
+			cat $domainHeart/crawl-data/* | sort -u | grep subdomains | cut -d " " -f 3 | tee $subLocation/crawl-subdomains
 			cat $subLocation/* | sort -u > $subLocation/$target-subdomains
 			echo -e "\n${green}[-] Linkfinding done${reset}\n"
 		else
