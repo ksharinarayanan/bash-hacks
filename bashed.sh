@@ -10,14 +10,24 @@ if [[ -f ~/.bash_aliases ]]; then
 	source ~/.bash_aliases
 fi
 
-while getopts "d:" opt
+while getopts "d:a:" opt
 do
 	case "${opt}" in
 		d)
 			target="${OPTARG}"
 			;;
+		a)
+			run_all="${OPTARG}"
+			;;
 	esac
 done
+
+if [[ $run_all != "" ]]; then
+	run_all=1
+else
+	run_all=0	
+fi
+
 if [[ $target == "" ]]; then
 	echo "Usage: ./bashed.sh -d domain.com"
 	exit 2
@@ -146,9 +156,11 @@ domainHeart=~/.recon-data/$target
 
 if [[ ! -d $domainHeart/crawl-data ]]; then
 
-	read -p "Should I run the linkfinding module [y/n]: " input
+	if [[ $run_all == 0 ]]; then
+		read -p "Should I run the linkfinding module [y/n]: " input
+	fi
 	
-	if [[ $input == 'Y' || $input == 'y' ]]; then
+	if [[ $input == 'Y' || $input == 'y' || $run_all == 1 ]]; then
 		if [[ -f $subLocation/$target-subdomains ]]; then
 			echo -e "\n${yellow}[+] Starting linkfinding${reset}\n"
 			mkdir $domainHeart/crawl-data
@@ -166,10 +178,12 @@ if [[ ! -d $domainHeart/crawl-data ]]; then
 fi
 
 if [[ ! -d $domainHeart/httpx ]]; then
+	
+	if [[ $run_all == 0 ]]; then
+	        read -p "Should I run httpx [y/n]: " input
+	fi
 
-        read -p "Should I run httpx [y/n]: " input
-
-        if [[ $input == 'y' || $input == 'Y' ]]; then
+        if [[ $input == 'y' || $input == 'Y' || $run_all == 1 ]]; then
 
 	       echo -e "\n${yellow}[+] Running httpx${reset}\n"
 	       curr=$(pwd)
@@ -186,9 +200,12 @@ fi
 
 
 if [[ ! -f $domainHeart/ports ]]; then
-	read -p "Should I port scan [y/n]: " input
 
-	if [[ $input == 'y' ]]; then
+	if [[ $run_all == 0 ]]; then
+		read -p "Should I port scan [y/n]: " input
+	fi
+
+	if [[ $input == 'y' || $input == 'Y' || $run_all == 1 ]]; then
 		if [[ -f $subLocation/$target-subdomains ]]; then
 			echo -e "\n${yellow}[+] Starting port scan ${reset}\n"
 			naabu -silent -hL $subLocation/$target-subdomains -t 20 -o $domainHeart/ports
@@ -200,8 +217,12 @@ if [[ ! -f $domainHeart/ports ]]; then
 fi
 
 if [[ ! -f $domainHeart/.nuclei-output ]]; then
-	read -p "Should I run nuclei [y/n]: " input
-	if [[ $input == 'y' || $input == 'Y' ]]; then
+
+	if [[ $run_all == 0 ]]; then
+		read -p "Should I run nuclei [y/n]: " input
+	fi
+
+	if [[ $input == 'y' || $input == 'Y' || $run_all == 1 ]]; then
 		if [[ ! -f $domainHeart/live-domains ]]; then
 			echo -e "\n${red}You must run httpx to run nuclei${reset}\n"
 			exit 1
