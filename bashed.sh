@@ -22,14 +22,6 @@ do
 	esac
 done
 
-if [[ $run_all != "" ]]; then
-	echo -e "\n${cyan}All modules set to run...${reset}\n"
-	run_all=1
-else
-	echo -e "\n${cyan}Specified modules will only run...${reset}\n"
-	run_all=0	
-fi
-
 if [[ $target == "" ]]; then
 	echo "Usage: ./bashed.sh -d domain.com"
 	exit 2
@@ -59,6 +51,14 @@ if [[ $target == "list" ]]; then
 	done
 	echo ""
 	exit 2
+fi
+
+if [[ $run_all != "" ]]; then
+        echo -e "\n${cyan}All modules set to run...${reset}\n"
+        run_all=1
+else
+        echo -e "\n${cyan}Specified modules will only run...${reset}\n"
+        run_all=0
 fi
 
 subLocation=~/.recon-data/$target/subdomains
