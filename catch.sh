@@ -13,7 +13,7 @@ if [[ $2 != "" ]]; then
 	keywords=$2
 	
 else
-	keywords="~/tools/bash-hacks/wordlists/sensitive"
+	keywords=~/tools/bash-hacks/wordlists/sensitive
 fi
 
 if [[ ! -f $1 ]]; then
