@@ -23,8 +23,10 @@ do
 done
 
 if [[ $run_all != "" ]]; then
+	echo -e "\n${cyan}All modules set to run...${reset}\n"
 	run_all=1
 else
+	echo -e "\n${cyan}Specified modules will only run...${reset}\n"
 	run_all=0	
 fi
 
