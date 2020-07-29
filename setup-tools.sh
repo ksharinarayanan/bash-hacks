@@ -54,15 +54,6 @@ git clone https://github.com/gwen001/github-search.git
 
 echo -e "\n${green}[-] Installed github subdomains${reset}\n"
 
-echo -e "\n${yellow}[+] Writing crt.sh to bash aliases${reset}\n"
-
-echo "crtsh(){
-	curl -s https://crt.sh/?Identity=%.$1 | grep \">*.$1\" | sed 's/<[/]*[TB][DR]>/\n/g' | grep -vE \"<|^[\*]*[\.]*$1\" | sort -u | awk 'NF'
-}" >> ~/.bash_aliases
-source ~/.bash_aliases
-
-echo -e "\n${green}[-] Written crt.sh to bash aliases${reset}\n"
-
 echo -e "\n${yellow}[+] Installing httpx${reset}\n"
 
 GO111MODULE=on go get -u -v github.com/projectdiscovery/httpx/cmd/httpx
