@@ -68,6 +68,12 @@ cd dirsearch
 
 echo -e "\n${green}[-] Installed dirsearch${reset}\n"
 
+echo -e "\n${yellow}[+] Installing gospider${reset}\n"
+
+go get -u github.com/jaeles-project/gospider
+
+echo -e "\n${green}[-] Installed gospider${reset}\n"
+
 echo -e "\n${yellow}[+] Installing naabu${reset}\n"
 
 GO111MODULE=on go get -v github.com/projectdiscovery/naabu/cmd/naabu
