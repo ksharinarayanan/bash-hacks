@@ -220,8 +220,8 @@ if [[ ! -f $domainHeart/.nuclei-output ]]; then
 			echo -e "\n${red}You must run httpx to run nuclei${reset}\n"
 			exit 1
 		fi
-
-		nuclei -t ~/nuclei-templates/ -c 300 -l $domainHeart/live-domains -o $domainHeart/nuclei-output
+		
+		nuclei -l $domainHeart/live-domains -t brute-force/ -t panels/ -t technologies/ -t cves/ -t tokens/ -t dns/ -t security-misconfiguration/ -t vulnerabilities/ -t basic-detections/ -t files/ -t subdomain-takeover/ -t workflows/ -silent -o $domainHeart/nuclei-output
 
 		touch $domainHeart/.nuclei-output
 	fi
