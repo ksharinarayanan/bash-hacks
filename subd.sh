@@ -150,25 +150,5 @@ echo -e "\n\nTotal subdomains found: $total\n"
 
 domainHeart="~/.recon-data/${target}"
 
-if [[ ! -d $domainHeart/httpx ]]; then
-	
-	if [[ $run_all == 0 ]]; then
-	        read -p "Should I run httpx [y/n]: " input
-	fi
-
-        if [[ $input == 'y' || $input == 'Y' || $run_all == 1 ]]; then
-
-	       echo -e "\n${yellow}[+] Running httpx${reset}\n"
-	       curr=$(pwd)
-	       mkdir "${domainHeart}/httpx"
-	       cd "${domainHeart}/httpx"
-	       httpx -l $subLocation/$target-subdomains -store-response -title -status-code -threads 77 -silent -no-color | tee result
-	       echo -e "\n${cyan}The live domains are: \n$reset"
-	       cat result | grep -v "\[4\|\[5" | cut -d [ -f 1 | cut -d " " -f 1 | tee $domainHeart/live-domains
-       	       echo -e "\n$reset"
-               cd $curr
-               echo -e "${green}\n[-] httpx done\n${reset}"
-	fi
-fi
-
+cat $subLocation/${target}-subdomains | httpx -silent -title -status-code | tee live-domains
 
