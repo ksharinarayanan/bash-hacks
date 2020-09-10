@@ -148,7 +148,3 @@ echo "${reset}"
 total=$(cat $subLocation/$target-subdomains | grep -c "")
 echo -e "\n\nTotal subdomains found: $total\n"
 
-domainHeart="~/.recon-data/${target}"
-
-cat $subLocation/${target}-subdomains | httpx -silent -title -status-code | tee live-domains
-
