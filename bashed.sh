@@ -10,7 +10,7 @@ if [[ -f ~/.bash_aliases ]]; then
 	source ~/.bash_aliases
 fi
 
-while getopts "d:a:" opt
+while getopts "d:a" opt
 do
 	case "${opt}" in
 		d)
