@@ -1,0 +1,23 @@
+HTTP/1.1 302 Found
+Connection: close
+Transfer-Encoding: chunked
+Access-Control-Allow-Origin: *
+Alt-Svc: clear
+Content-Security-Policy: default-src 'self'; connect-src https:; font-src https:; img-src data: http: https:; child-src 'self'; frame-src https:;script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net/gh/highlightjs/ https://fonts.googleapis.com/
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 10 Sep 2020 14:30:07 GMT
+Location: /channels/1/announcements
+Set-Cookie: d=qw5DnQX_gpfQ6_EV17WSFstEdgOVTPn5BM-EKIe7F41HG-6pVvJ9HhpBfNy4RWPfIUS1iHHb9WMM-5aaKeWoZQ_e; Path=/; Domain=forum.guvi.in; Max-Age=1576800000; Expires=Fri, 29 Aug 2070 14:30:07 GMT; Secure; HttpOnly; SameSite=None
+Set-Cookie: rt=ew8oJnbz6mxvSQKQRp6uda3p0jwnFLvCUJF-GQMbLWdsmnUvjxzauyFbEVR4VQTuUmsDesAyes7LwauGqhg-Xo3d; Path=/; Domain=forum.guvi.in; Max-Age=432000; Expires=Tue, 15 Sep 2020 14:30:07 GMT; Secure; HttpOnly; SameSite=Lax
+Set-Cookie: uid=9999999999; Path=/; Domain=forum.guvi.in; Max-Age=432000; Expires=Tue, 15 Sep 2020 14:30:07 GMT; Secure; HttpOnly; SameSite=Lax
+Set-Cookie: non=tbhwaeRVyliRZ9v9dX9umn7UU7N16GBi3odWE83L0os; Path=/; Domain=forum.guvi.in; Max-Age=432000; Expires=Tue, 15 Sep 2020 14:30:07 GMT; Secure; HttpOnly; SameSite=None
+Vary: Accept, Accept-Encoding
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1
+
+2f
+Found. Redirecting to /channels/1/announcements
+0
+

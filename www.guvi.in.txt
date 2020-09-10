@@ -1,0 +1,1010 @@
+HTTP/1.1 200 OK
+Connection: close
+Transfer-Encoding: chunked
+Cache-Control: public
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 5d09d857bb9419dd-SIN
+Cf-Request-Id: 051a058ace000019dd658e5200000001
+Content-Type: text/html
+Date: Thu, 10 Sep 2020 14:30:07 GMT
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Last-Modified: Wed, 09 Sep 2020 13:40:06 GMT
+Server: cloudflare
+Set-Cookie: __cfduid=de31740cb948209afff6fe3f03a77f2ac1599748207; expires=Sat, 10-Oct-20 14:30:07 GMT; path=/; domain=.guvi.in; HttpOnly; SameSite=Lax; Secure
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+
+8c9e
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>GUVI | Learn to code in your native language</title>
+<meta name="description" content="Learn and Practise Programming with courses like C, Python, Deep Learning, Machine Learning  etc which are created by industry experts in your preferred regional languages (English, Tamil, Telugu,Hindi, Arabic)." />
+<link rel="canonical" href="https://www.guvi.in">
+<meta name="robots" content="index, follow" />
+
+<link rel='icon' href='images/favicon.ico' type='image/x-icon' />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Muli:400,700,800,900&display=swap" rel="stylesheet">
+<link href="css/4.css" rel="stylesheet">
+<link href="css/stylev2.css?stamp=1578720149" rel="stylesheet">
+<link href="css/guviv2.css?stamp=3" rel="stylesheet">
+<link rel="manifest" href="/manifest.json">
+<script defer type="text/javascript" src="js/library/dependency.js"></script>
+<script type="text/javascript" src="js/library/modernizr-custom.js"></script>
+<script defer type="text/javascript" src="js/steroid.js?v=1"></script>
+<script defer type="text/javascript" src="js/landing.js"></script>
+<script src="js/library/lazysizes.min.js" defer></script>
+</head>
+<body>
+<main role="main" class="container-fluid" id="landing-page">
+<div class="row">
+<div class="col">
+<header>
+<nav class="navbar navbar-expand-md navbar-light">
+<a class="navbar-brand" href="#">
+<img data-src="images/guvi-logo.png" class="lazyload" alt="GUVI : Learn to code in your native language" />
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainLinks">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="navbar-collapse collapse justify-content-stretch" id="mainLinks">
+<div class="links-groups-wrap">
+<ul class="navbar-nav main-links">
+<li class="nav-item zen-class-link">
+<a class="nav-link text-highlight" href="ai-combo-pack.html">AI COMBO</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="courses.html">Courses</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="code-kata.html">Practise</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="hyre.html" target="_blank">Hyre</a>
+</li>
+<li class="nav-item zen-class-link">
+<a class="nav-link" href="zenclass.html" target="_blank">Zen class</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="story.html">Our story</a>
+</li>
+</ul>
+<ul class="navbar-nav account-links-group ">
+<li class="nav-item">
+<a class="nav-link" href="sign-in.html">Sign in</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="register.html">Register</a>
+ </li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+</div>
+</div>
+<div id="mail"></div>
+
+<div>
+<div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li class="mx-2 active" data-target="#bannerCarousel" data-slide-to="0"></li>
+<li class="mx-2" data-target="#bannerCarousel" data-slide-to="1"></li>
+<li class="mx-2" data-target="#bannerCarousel" data-slide-to="2"></li>
+<li class="mx-2" data-target="#bannerCarousel" data-slide-to="3"></li>
+<li class="mx-2" data-target="#bannerCarousel" data-slide-to="4"></li>
+
+</ol>
+<div class="carousel-inner">
+
+
+<div class="carousel-item active">
+<div class="d-flex justify-content-between anniversary-background align-items-center devops-bg ">
+<div class="ml-sm-3 anniversary-cakeBg">
+<div class="px-3 text-white align-items-center ml-lg-5 my-5">
+<div class="ml-md-2 ml-lg-5">
+
+
+<h1 class="display-4 d-none d-md-block display-5 font-weight-boldest">Want to become a <br>DevOps Engineer?</h1>
+<h2 class="text-white d-block d-md-none display-5 font-weight-boldest text-center">Want to become a DevOps Engineer?</h2>
+<p class="lead d-none d-md-block">Master relevant skills that’ll fast-track your career,<br> from the comfort of your home!</p>
+<p class="lead d-block d-md-none text-center">Master relevant skills that’ll fast-track your career, from the comfort of your home!</p>
+
+<div class="d-md-inline-block d-flex justify-content-sm-stretch my-3">
+<a href="lp-devops-engineer.html" class="btn btn-lg btn-primary text-white px-5 w-100">View details</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-item">
+<div class="d-flex justify-content-between anniversary-background align-items-center data-bg guvi-lazy-img">
+<div class="ml-sm-3 anniversary-cakeBg">
+<div class="px-3 text-white align-items-center ml-lg-5 my-5">
+<div class="ml-md-2 ml-lg-5">
+
+
+<h1 class="display-4 d-none d-md-block display-5 font-weight-boldest">Learn Data Science<br>from the comfort of your home</h1>
+<h2 class="text-white d-block d-md-none display-5 font-weight-boldest text-center">Learn Data Science from the comfort of your home</h2>
+<p class="lead d-none d-md-block">Master data science skills like Power BI, Data Analytics using Pandas,<br>Machine Learning & more!</p>
+<p class="lead d-block d-md-none text-center">Master data science skills like Power BI, Data Analytics using Pandas, Machine Learning & more!</p>
+
+<div class="d-md-inline-block d-flex justify-content-sm-stretch my-3">
+<a href="lp-data-science-pack.html" class="btn btn-lg btn-primary text-white px-5 w-100">View details</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-item">
+<div class="d-flex justify-content-between anniversary-background align-items-center dev-bg guvi-lazy-img">
+<div class="ml-sm-3 anniversary-cakeBg">
+<div class="px-3 text-white align-items-center ml-lg-5 my-5">
+<div class="ml-md-2 ml-lg-5">
+
+
+<h1 class="display-4 d-none d-md-block display-5 font-weight-boldest">Planning to start a career in<br>Software Development?</h1>
+<h2 class="text-white d-block d-md-none display-5 font-weight-boldest text-center">Planning to start a career in Software Development?</h2>
+<p class="lead d-none d-md-block">Our Programming Starter Pack helps you get a headstart</p>
+<p class="lead d-block d-md-none text-center">Our Programming Starter Pack helps you get a headstart</p>
+
+<div class="d-md-inline-block d-flex justify-content-sm-stretch my-3">
+<a href="lp-programming-starter-pack.html" class="btn btn-lg btn-primary text-white px-5 w-100">View details</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="carousel-item">
+<div class="d-flex justify-content-between anniversary-background align-items-center anniversary1-bg guvi-lazy-img">
+<div class="ml-sm-3 anniversary-cakeBg">
+<div class="px-3 text-white align-items-center ml-lg-5 my-5">
+<div class="ml-md-2 ml-lg-5">
+
+
+<h1 class="display-4 d-none d-md-block display-5 font-weight-boldest ">Artificial Intelligence<br>Combo Pack</h1>
+<h2 class="text-white d-block d-md-none display-5 font-weight-boldest text-center">Artificial Intelligence Combo Pack</h2>
+<p class="lead d-none d-md-block">Upskill yourself with the most in-demand<br> career choice of AI with our Artificial Intelligence Combo Pack.</p>
+<p class="lead d-block d-md-none text-center">Upskill yourself with the most in-demand career choice of AI with our Artificial Intelligence Combo Pack.</p>
+
+<div class="d-md-inline-block d-flex justify-content-sm-stretch my-3">
+<a href="ai-combo-pack.html" class="btn btn-lg btn-primary text-white px-5 w-100">View details</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-item">
+<div class="d-flex justify-content-between anniversary-background align-items-center front-bg guvi-lazy-img">
+<div class="ml-sm-3 anniversary-cakeBg">
+<div class="px-3 text-white align-items-center ml-lg-5 my-5">
+<div class="ml-md-2 ml-lg-5">
+
+
+<h1 class="display-4 d-none d-md-block display-5 font-weight-boldest">Want to become a <br>Front-end Developer?</h1>
+<h2 class="text-white d-block d-md-none display-5 font-weight-boldest text-center">Want to become a Front-end Developer?</h2>
+<p class="lead d-none d-md-block">Implement Visual elements and create graphical interface<br> using technologies like HTML, CSS, Javascript, Angular etc.</p>
+<p class="lead d-block d-md-none text-center">Implement Visual elements and create graphical interface using technologies like HTML, CSS, Javascript, Angular etc.</p>
+
+<div class="d-md-inline-block d-flex justify-content-sm-stretch my-3">
+<a href="lp-frontend-developer-pack.html" class="btn btn-lg btn-primary text-white px-5 w-100">View details</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="d-flex">
+<a class="carousel-control-prev landing-carousel-btn" href="#bannerCarousel" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon " aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next landing-carousel-btn" href="#bannerCarousel" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+<div class="col p-0">
+
+
+
+</div>
+
+
+<div class="row">
+</div>
+<div class="section-skillup">
+<div class="row">
+<div class="col-md-12 col-lg-6">
+<div class="content-wrap">
+<h2>Learn Practise Get Hired</h2>
+<p id="userCount"></p>
+<p>Trusted by 200+ top companies and 100+ colleges.</p>
+<div class="btn-wrap">
+<a class="btn btn-primary btn-gradient" href="courses.html">To
+Learn</a>
+<a class="btn btn-primary btn-gradient" href="hyre.html" target="_blank">To
+Hire</a>
+</div>
+</div>
+</div>
+<div class="col-md-12 col-lg-6">
+<div class="figure-wrap">
+ <picture>
+<source type="image/webp" data-srcset="images/webps/artwork-skillup.webp">
+<img data-src="images/minified/artwork-skillup.jpeg" class="artwork-skillup lazyload" alt="Skillup">
+</picture>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="d-flex flex-row justify-content-center">
+<p class="unique">Why Learn<span><strong>/Hire</strong> from GUVI?</span></p>
+</div>
+</div>
+</div>
+
+<div class="section-native">
+<div class="row">
+<div class="col-md-12 col-lg-6">
+<div class="content-wrap">
+<h2>Learn and Practise Programming with courses created by industry experts</h2>
+<p>Learn to code in your own native language (English, Tamil, Telugu,Hindi)</p>
+</div>
+</div>
+<div class="col-md-12 col-lg-6">
+<div class="figure-wrap">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/artwork-native.webp">
+<img data-src="images/minified/artwork-native.jpg" class="artwork-native lazyload" alt="native language">
+</picture>
+</div>
+</div>
+</div>
+</div>
+<ul class="list-unstyled fact-highlights">
+<li>
+<span class="external-design-speed"></span>
+<p><span><strong>72%</strong> of Learners</span> complete their course within 3 month duration</p>
+</li>
+<li>
+<span class="external-design-recollect"></span>
+<p><span><strong>78%</strong> of Learners</span> able to recollect & relate faster</p>
+</li>
+<li>
+<span class="external-design-understanding"></span>
+<p><span><strong>84%</strong> of Learners</span> have better understanding over complex concepts</p>
+</li>
+</ul>
+
+
+<div class="section-codekata">
+<div class="row">
+<div class="col-md-12 col-lg-6">
+<div class="content-wrap">
+<h2><i class="icon-code-kata product-head"></i> Codekata</h2>
+<p>Solve 1000+ programming problems through gamified and personalised approach.</p>
+</div>
+</div>
+<div class="col-md-12 col-lg-6">
+<div class="figure-wrap">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/product-screen-codekata.webp">
+<img data-src="images/minified/product-screen-codekata.png" class="product-screen-codekata lazyload" alt="artwork">
+</picture>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="section-microarc">
+<div class="row">
+<div class="col-md-12 col-lg-6 order-md-1">
+<div class="content-wrap">
+<h2 style="padding-left: 1em;"><i class="icon-micro-arc product-head"></i> MicroARC</h2>
+<p style="padding-left: 5em;">MicroARC is a standardised skill assessment platform powered by Artificial Intelligence with a huge question library.</p>
+</div>
+</div>
+<div class="col-md-12 col-lg-6">
+<div class="figure-wrap">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/product-screen-microarc.webp">
+<img data-src="images/minified/product-screen-microarc.png" class="product-screen-microarc lazyload" alt="artwork">
+</picture>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="section-skillprofile">
+<div class="row">
+<div class="col-md-12 col-lg-6">
+<div class="content-wrap">
+<h2><i class="icon-skill-profile product-head"></i> <span>Build your Skill profile</span></h2>
+<p>Build your personal brand by building your skill profile.Its a great way to tell recruiters who you are and what skills you have .</p>
+</div>
+</div>
+<div class="col-md-12 col-lg-6">
+<div class="figure-wrap">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/product-screen-skillprofile.webp">
+<img data-src="images/minified/product-screen-skillprofile.png" class="product-screen-skillprofile lazyload" alt="artwork">
+</picture>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="section-zenclass">
+<div class="row">
+<div class="col-md-12 col-lg-6 order-md-1">
+<div class="content-wrap">
+<h2><i class="external-design-zenclass-big"></i> <span>Zen class</span> </h2>
+<p class="highlight">Coding Bootcamp . New Age GURUKULAM</p>
+<p><strong>3 months Intensive Project Based Learning program</strong>, where you will learn and gain a skill ( code like wizard from <strong>Hogwarts</strong> ) with mentors from industry solving real world problems</p>
+<div class="btn-wrap"><button class="btn btn-outline-primary" onclick="javascript:window.location.replace('https://guvi.in/zen');">More info</button></div>
+</div>
+</div>
+<div class="col-md-12 col-lg-6">
+<div class="figure-wrap">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/artwork-zenclass.webp">
+<img data-src="images/minified/artwork-zenclass.jpg" class="artwork-zenclass lazyload" alt="Zenclass">
+</picture>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="howitworks-list">
+<h2>How it <strong>works</strong></h2>
+<div class="section-howitworks">
+<div class="content-wrap">
+<h3>Join</h3>
+<p>Create your GUVI account</p>
+</div>
+<div class="figure-wrap">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/artwork-join.webp">
+<img data-src="images/minified/artwork-join.png" class="gravatar lazyload" alt="Join GUVI">
+</picture>
+</div>
+</div>
+<div class="section-howitworks">
+<div class="content-wrap">
+<h3>Explore</h3>
+<p>Explore a variety of courses in different languages and technologies and choose one to start with.</p>
+</div>
+<div class="figure-wrap">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/artwork-explore.webp">
+<img data-src="images/minified/artwork-explore.png" class="gravatar lazyload" alt="explore different languages">
+</picture>
+</div>
+</div>
+<div class="section-howitworks">
+<div class="content-wrap">
+<h3>Get Personalised suggestion</h3>
+<p>Take a pre assessment, Know where you stand and get personalised suggestions on course topics.</p>
+</div>
+<div class="figure-wrap">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/artwork-personalized.webp">
+<img data-src="images/minified/artwork-personalized.png" class="gravatar lazyload" alt="Personalised Learning">
+</picture>
+</div>
+</div>
+<div class="section-howitworks">
+<div class="content-wrap">
+<h3>Get Certified</h3>
+<p>Take a Certification test after learning and get certified by GUVI. </p>
+</div>
+<div class="figure-wrap">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/artwork-certified.webp">
+<img data-src="images/minified/artwork-certified.png" class="gravatar lazyload" alt="get certified">
+</picture>
+</div>
+</div>
+<div class="section-howitworks">
+<div class="content-wrap">
+<h3>Land on your dream job</h3>
+<p>Build your profile, Get interview calls from companies and land in your dream job.</p>
+</div>
+<div class="figure-wrap">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/artwork-dreamjob.webp">
+<img data-src="images/minified/artwork-dreamjob.png" class="gravatar lazyload" alt="get your dream job">
+</picture>
+</div>
+</div>
+</div>
+
+
+<div class="d-flex flex-row justify-content-center mb-3">
+<h2 class="text-center">Become a Premium member by purchasing our courses</h2>
+</div>
+<div class="row justify-content-center">
+<div class="col-md-12 col-lg-6 col-xl-3">
+<div class="card shadow codekata-card">
+<div class="card-header basic-header d-flex justify-content-center rounded-bottom">
+<strong class="text-white">Free Membership</strong>
+</div>
+<div class="card-body">
+<div class="d-flex justify-content-between">
+<div class="d-flex justify-content-start">
+<i class="fas fa-check-circle mt-1 mr-2 text-primary"></i>
+<p class="font-weight-bold">Codekata</p>
+</div>
+<p class="font-weight-bold">Limited Access</p>
+</div>
+<div class="d-flex justify-content-between">
+<div class="d-flex justify-content-start">
+<i class="fas fa-check-circle mt-1 mr-2 text-primary"></i>
+<p class="font-weight-bold">MicroARC</p>
+</div>
+<p class="font-weight-bold">Limited Access</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-12 col-lg-6 col-xl-3">
+<div class="card shadow codekata-card">
+<div class="card-header premium-header d-flex justify-content-center after-card rounded-bottom">
+<strong class="text-white">Premium Membership</strong>
+</div>
+<div class="card-body">
+<div class="d-flex justify-content-between">
+<div class="d-flex justify-content-start">
+<i class="fas fa-check-circle mt-1 mr-2 text-primary"></i>
+<p class="font-weight-bold">Codekata</p>
+</div>
+<p class="font-weight-bold">Unlimited Access</p>
+</div>
+<div class="d-flex justify-content-between">
+<div class="d-flex justify-content-start">
+<i class="fas fa-check-circle mt-1 mr-2 text-primary"></i>
+<p class="font-weight-bold">MicroArc</p>
+</div>
+<p class="font-weight-bold">Unlimited Access</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="d-flex flex-row justify-content-center mt-3 mb-5 pb-5">
+<a id="subscriptionGoToCourses">
+<button type="button" class="btn btn-primary rounded-button pl-5 pr-5">Go to Courses</button>
+</a>
+</div>
+
+
+<div class="row">
+<div class="col learners-title">
+<h2><span>Our learners</span></h2>
+</div>
+</div>
+<div class="section-learners carousel-section">
+<div class="carousel-wrap">
+<div class="d-md-none">
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#carousel" data-slide-to=0 class="active"></li>
+<li data-target="#carousel" data-slide-to=1 class=""></li>
+<li data-target="#carousel" data-slide-to=2 class=""></li>
+<li data-target="#carousel" data-slide-to=3 class=""></li>
+<li data-target="#carousel" data-slide-to=4 class=""></li>
+<li data-target="#carousel" data-slide-to=5 class=""></li>
+</ol>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<div class="slide-box">
+<div class="learner-list">
+<div class="learner shadow">
+<div class="d-flex flex-row mb-2">
+<div class="gravatar-wrap mr-2">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/kar.webp">
+<img data-src="images/minified/kar.jpg" class="gravatar lazyload" alt="Job Placed candidates">
+</picture>
+</div>
+<div class="account-info d-flex flex-column justify-content-center">
+<p class="learner-name">Karthikeyan Parthiban</p>
+</div>
+</div>
+<p class="testimonial">"For freshers, GUVI is the best place they could start from. The interactive tutorials on their site helped me to track the progress and also keeps me motivated in completing them. Now I work as an Experience
+Designer at UXIndia."</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-item ">
+<div class="slide-box">
+<div class="learner-list">
+<div class="learner shadow">
+<div class="d-flex flex-row mb-2">
+<div class="gravatar-wrap mr-2">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/moh.webp">
+<img data-src="images/minified/moh.jpg" class="gravatar lazyload" alt="Job Placed candidates">
+</picture>
+</div>
+<div class="account-info d-flex flex-column justify-content-center">
+<p class="learner-name">Mohanraj N</p>
+</div>
+</div>
+<p class="testimonial">"Guvi helps me to learn technology and to improve my coding skills and logical problem-solving ability. I got an opportunity to attend an interview in PayPal via guvi and I got an offer at PayPal. Guvi is a
+great platform when it utilized in right manner."</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-item ">
+<div class="slide-box">
+<div class="learner-list">
+<div class="learner shadow">
+<div class="d-flex flex-row mb-2">
+<div class="gravatar-wrap mr-2">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/buv.webp">
+<img data-src="images/minified/buv.jpg" class="gravatar lazyload" alt="Job Placed candidates">
+</picture>
+</div>
+<div class="account-info d-flex flex-column justify-content-center">
+ <p class="learner-name">Bhuvaneshwari R</p>
+</div>
+</div>
+<p class="testimonial">"I got guvi account with the help of my college.Then I started to solve problems in Codekata and used to listen java videos.I learned java with the help of Guvi.Urjanet drive came to my college via GUVI and
+I received an offer from urjanet.Thanks to Guvi."</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-item ">
+<div class="slide-box">
+<div class="learner-list">
+<div class="learner shadow">
+<div class="d-flex flex-row mb-2">
+<div class="gravatar-wrap mr-2">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/dhan.webp">
+<img data-src="images/minified/dhan.jpg" class="gravatar lazyload" alt="Job Placed candidates">
+</picture>
+</div>
+<div class="account-info d-flex flex-column justify-content-center">
+<p class="learner-name">Dhanush N</p>
+</div>
+</div>
+<p class="testimonial">"Computers are getting smarter all the time, Guvi helps people to adapt to smartness in Coding & in terms of building logic to programmers.It made coding easier and interesting by learning it in our native language."</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-item ">
+<div class="slide-box">
+<div class="learner-list">
+<div class="learner shadow">
+<div class="d-flex flex-row mb-2">
+<div class="gravatar-wrap mr-2">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/tb.webp">
+<img data-src="images/minified/tb.jpg" class="gravatar lazyload" alt="Job Placed candidates">
+</picture>
+</div>
+<div class="account-info d-flex flex-column justify-content-center">
+<p class="learner-name">Nanda T B</p>
+</div>
+</div>
+ <p class="testimonial">"It helps me a lot to think very creative to obtain an answer. I got an offer from <strong>Symantec&nbsp;</strong>and I am really very happy to be the part of guvi."</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-item ">
+<div class="slide-box">
+<div class="learner-list">
+<div class="learner shadow">
+<div class="d-flex flex-row mb-2">
+<div class="gravatar-wrap mr-2">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/ramya.webp">
+<img data-src="images/minified/ramya.jpg" class="gravatar lazyload" alt="Job Placed candidates">
+</picture>
+</div>
+<div class="account-info d-flex flex-column justify-content-center">
+<p class="learner-name">Ramya Chinnadurai</p>
+</div>
+</div>
+<p class="testimonial">"Guvi helps me to improve my self-confidence in coding skills. The tutorial videos are totally friendly and easy to learn. It helps me to understand the basic and the core concepts and it helped me to build
+my logical skills. Thanks to GUVI team."</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+<div class="d-none d-md-block">
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#carousel" data-slide-to=0 class="active"></li>
+<li data-target="#carousel" data-slide-to=1 class=""></li>
+</ol>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<div class="slide-box">
+<div class="learner-list">
+<div class="learner shadow">
+<div class="d-flex flex-row mb-2">
+ <div class="gravatar-wrap mr-2">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/kar.webp">
+<img data-src="images/minified/kar.jpg" class="gravatar lazyload" alt="Job Placed candidates">
+</picture>
+</div>
+<div class="account-info d-flex flex-column justify-content-center">
+<p class="learner-name"> Karthikeyan Parthiban</p>
+</div>
+</div>
+<p class="testimonial">"For freshers, GUVI is the best place they could start from. The interactive tutorials on their site helped me to track the progress and also keeps me motivated in completing them. Now I work as an Experience
+Designer at UXIndia."</p>
+
+</div>
+<div class="learner shadow">
+<div class="d-flex flex-row mb-2">
+<div class="gravatar-wrap mr-2">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/moh.webp">
+<img data-src="images/minified/moh.jpg" class="gravatar lazyload" alt="Job Placed candidates">
+</picture>
+
+</div>
+<div class="account-info d-flex flex-column justify-content-center">
+<p class="learner-name">Mohanraj N</p>
+</div>
+</div>
+<p class="testimonial">"Guvi helps me to learn technology and to improve my coding skills and logical problem-solving ability. I got an opportunity to attend an interview in PayPal via guvi and I got an offer at PayPal. Guvi is a
+great platform when it utilized in right manner." </p>
+
+</div>
+<div class="learner shadow">
+<div class="d-flex flex-row mb-2">
+<div class="gravatar-wrap mr-2">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/buv.webp">
+<img data-src="images/minified/buv.jpg" class="gravatar lazyload" alt="Job Placed candidates">
+ </picture>
+</div>
+<div class="account-info d-flex flex-column justify-content-center">
+<p class="learner-name">Bhuvaneshwari R</p>
+</div>
+</div>
+<p class="testimonial">"I got guvi account with the help of my college.Then I started to solve problems in Codekata and used to listen java videos.I learned java with the help of Guvi.Urjanet drive came to my college via GUVI and
+I received an offer from urjanet.Thanks to Guvi." </p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-item ">
+<div class="slide-box">
+<div class="learner-list">
+<div class="learner shadow">
+<div class="d-flex flex-row mb-2">
+<div class="gravatar-wrap mr-2">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/dhan.webp">
+<img data-src="images/minified/dhan.jpg" class="gravatar lazyload" alt="Job Placed candidates">
+</picture>
+</div>
+<div class="account-info d-flex flex-column justify-content-center">
+<p class="learner-name">Dhanush N</p>
+</div>
+</div>
+<p class="testimonial">"Computers are getting smarter all the time, Guvi helps people to adapt to smartness in Coding & in terms of building logic to programmers.It made coding easier and interesting by learning it in our native language."</p>
+
+</div>
+<div class="learner shadow">
+<div class="d-flex flex-row mb-2">
+<div class="gravatar-wrap mr-2">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/tb.webp">
+<img data-src="images/minified/tb.jpg" class="gravatar lazyload" alt="Job Placed candidates">
+</picture>
+</div>
+<div class="account-info d-flex flex-column justify-content-center">
+<p class="learner-name">Nanda T B</p>
+</div>
+</div>
+<p class="testimonial">"It helps me a lot to think very creative to obtain an answer. I got an offer from <strong>Symantec&nbsp;</strong>and I am really very happy to be the part of guvi."</p>
+
+</div>
+<div class="learner shadow">
+<div class="d-flex flex-row mb-2">
+<div class="gravatar-wrap mr-2">
+
+<picture>
+<source type="image/webp" data-srcset="images/webps/ramya.webp">
+<img data-src="images/minified/ramya.jpg" class="gravatar lazyload" alt="Job Placed candidates">
+</picture>
+</div>
+<div class="account-info d-flex flex-column justify-content-center">
+<p class="learner-name">Ramya Chinnadurai</p>
+</div>
+</div>
+<p class="testimonial">"Guvi helps me to improve my self-confidence in coding skills. The tutorial videos are totally friendly and easy to learn. It helps me to understand the basic and the core concepts and it helped me to build
+my logical skills. Thanks to GUVI team."</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col hiringpartners-title">
+<h2 class=" align-content-center"><span>Hiring Partners</span></h2>
+</div>
+</div>
+<div class="section-hiringpartners">
+<ul class="list-unstyled hiring-partners-list">
+<li><span class="recruiter-paypal"></span></li>
+<li><span class="recruiter-freshworks"></span></li>
+<li><span class="recruiter-dbs"></span></li>
+<li><span class="recruiter-scapic"></span></li>
+<li><span class="recruiter-gofrugai"></span></li>
+<li><span class="recruiter-chargebee"></span></li>
+</ul>
+</div>
+
+
+<div class="row">
+<div class="col journey-title">
+<h2><span>Our Journey so Far</span></h2>
+</div>
+</div>
+<div class="section-journey">
+<div class="row">
+<div class="col-md-12 col-lg-6">
+<ul class="list-unstyled journey-facts">
+<li>
+<strong class="text-dark" id="users"></strong>
+<span>Users</span>
+</li>
+<li>
+<strong class="text-dark" id="mentors"></strong>
+<span>Mentors</span>
+</li>
+<li>
+<strong class="text-dark" id="lines"></strong>
+<span>Lines of code submissions</span>
+</li>
+<li>
+<strong class="text-dark" id="videos"></strong>
+<span>Videos</span>
+</li>
+</ul>
+</div>
+<div class="col-md-12 col-lg-6">
+<div class="figure-wrap">
+<span class="external-design-journey"></span>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="section-subscribe">
+<div class="subscriber-wrap">
+<h2>Sign up for Free courses & Workshop</h2>
+<form class="form-inline">
+<div class="form-group mr-sm-3 mb-2">
+<label for="subscribeEmail" class="sr-only">Email</label>
+<input type="text" class="form-control" id="subscribeEmail" placeholder="email@example.com">
+</div>
+<button type="button" id="subscribe" class="btn btn-primary mb-2">Subscribe</button>
+</form>
+</div>
+</div>
+<div id="sub_msg"></div>
+
+
+<footer class="main-footer shadow-lg">
+<div class="footer-wrap">
+<div class="row">
+<div class="col-md-12 col-lg-3 logo-wrap">
+<a href="#" class="brand logo"><img data-src="images/guvi-logo-full.png" class="lazyload" alt="GUVI : Learn to code in your native language" /></a>
+</div>
+<div class="col-md-12 col-lg-3 footer-links-section solution-links">
+<h6>Solution</h6>
+<ul class="list-unstyled footer-links">
+<li><a href="courses.html">Personal</a></li>
+
+<li><a rel="noopener" href="zenclass.html">Zen class</a></li>
+<li><a rel="noopener" href="hyre.html">Corporate</a></li>
+</ul>
+</div>
+<div class="col-md-12 col-lg-3 footer-links-section platform-links">
+<h6>Platform</h6>
+<ul class="list-unstyled footer-links">
+<li><a href="courses.html">Course library</a></li>
+<li><a href="code-kata.html">Codekata</a></li>
+<li><a href="micro-arc.html">MicroArc</a></li>
+<li><a href="project-board.html">Project board</a></li>
+<li><a rel="noopener" href="hyre.html">HYRE</a></li>
+<li><a href="rewards.html">Rewards</a></li>
+</ul>
+</div>
+<div class="col-md-12 col-lg-3 footer-links-section company-links">
+<h6>Company</h6>
+<ul class="list-unstyled footer-links">
+<li><a href="about_us.html">About us</a></li>
+<li><a href="contact_us.html">Contact us</a></li>
+<li><a href="terms-of-service.html">Terms and Conditions</a></li>
+</ul>
+<ul class="list-unstyled social-links">
+<li><a rel="noopener" href="https://www.instagram.com/guviofficial" target="_blank"><i class="fab fa-instagram"></i></a></li>
+<li><a rel="noopener" href="https://www.twitter.com/guviofficial" target="_blank"><i class="fab fa-twitter"></i></a></li>
+<li><a href="https://www.facebook.com/guviofficial" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="https://www.youtube.com/c/Guvisharing" target="_blank"><i class="fab fa-youtube"></i></a></li>
+<li><a href="https://www.linkedin.com/company/guviofficial" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+</ul>
+<p class="h-adr">
+<span class="p-street-address">IITM Research park - phase 2, module #9, 3rd floor, D block, Kanagam Rd,
+</span>
+<span class="p-locality">Tharamani, Chennai, </span>
+<span class="p-region">Tamil Nadu, </span>
+<span class="p-country-name"> India. </span>
+<span class="p-postal-code">600113</span>
+</p>
+</div>
+<p class="copyright">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2014 - 2020 <span>GUVI Geek Network Pvt
+Ltd., All rights reserved</span></p>
+</div>
+</div>
+</footer>
+
+</main>
+<div class="spinner spinner-border text-dark" role="status">
+<span class="sr-only">Loading...</span>
+</div>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-body d-flex flex-column align-items-center my-5">
+<h5>Hi there..! Sign in to get started</h5>
+<div class="btn-wrap mt-5">
+<a href="sign-in.html" class="btn btn-primary">Sign in</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="modal fade" id="forumModalNew" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered mx-auto" role="document">
+<div class="modal-content border-radius-1">
+<div class="modal-body pb-0">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+<div class="row no-gutters p-md-4 py-3 mb-md-2">
+<div class="col-md-4">
+<img src="images/modal/GUVIForumNew.svg" alt="ForumImage" class="img-fluid w-100 h-100">
+</div>
+<div class="col-md-8 p-3">
+<h3 class="text-oxfordBlue font-weight-x-bold my-3">Start shooting your questions! </h3>
+<h3 class="text-oxfordBlue font-weight-x-bold my-3">We are all ears!</h3>
+<h6 class="text-secondary text-height-2 pr-md-5 my-3">
+Got stuck while learning? Have any queries? Do
+not worry? On the GUVI Forum, you can now post
+your questions to get them answered.
+</h6>
+</div>
+</div>
+<div class="row bg-light py-4 mb-0 border-radius-1 border-radius-top-0">
+<div class="col-md-12 text-center">
+<a href="https://forum.guvi.in/" class="btn btn-primary" id="modalForumBtn">Visit Forum</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+        var currentSite = window.location.href;
+        if (currentSite.includes("guvi.in") || currentSite.includes("guvi.io")) {
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-5WRCCN9');
+        }
+        var url = window.location.href,
+            n = url.search(/guvi/i),
+            demo = url.search("/demo"); - 1 !== n && -1 === demo && (! function(e, a, n, t, o, c, r) {
+            e.GoogleAnalyticsObject = o, e[o] = e[o] || function() {
+                (e[o].q = e[o].q || []).push(arguments)
+            }, e[o].l = 1 * new Date, c = a.createElement(n), r = a.getElementsByTagName(n)[0], c.async = 1, c.src = t, r.parentNode.insertBefore(c, r)
+        }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"), ga("create", "UA-53114947-1", "auto"), ga("send", "pageview"));
+    </script>
+</body>
+</html>
+0
+
