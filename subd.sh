@@ -67,12 +67,6 @@ fi
 
 subLocation=~/.recon-data/$target/subdomains
 
-if [[ -d ~/.recon-data/$target/subdomains ]]; then
-	read -p "The target's data already exists, do you want to start fresh, if no it continues from where you left(y/n): " input
-	if [[ $input == 'y' || $input == 'Y' ]]; then
-		rm -rf ~/.recon-data/$target
-	fi
-fi
 if [[ ! -d ~/.recon-data/$target ]]; then
 	mkdir ~/.recon-data/$target
 fi
@@ -143,6 +137,8 @@ else
 fi
 
 echo -e "\n\n${green}The final list of subdomains are:\n${yellow}"
+
+
 cat $subLocation/* | sort -u | grep $target | tee $subLocation/$target-subdomains
 echo "${reset}"
 total=$(cat $subLocation/$target-subdomains | grep -c "")
