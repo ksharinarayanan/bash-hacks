@@ -144,13 +144,33 @@ echo "${reset}"
 total=$(cat $subLocation/$target-subdomains | grep -c "")
 echo -e "\n\nTotal subdomains found: $total\n"
 
+echo -e "\n[+] Starting HTTPX\n"
 httpxLocation=""
-if [[ -f ~/.recon-data/$target/live-domains ]]; then
-	httpxLocation="~/.recon-data/${target}/latest-live-domains"
+if [[ -f $HOME/.recon-data/$target/live-domains ]]; then
+	httpxLocation="$HOME/.recon-data/${target}/latest-live-domains"
 else
-	httpxLocation="~/.recon-data/${target}/live-domains"
+	httpxLocation="$HOME/.recon-data/${target}/live-domains"
 fi
 
 cat $subLocation/$target-subdomains | httpx -silent | tee $httpxLocation
-cat $httpxLocation | sort -u | tee temp
+cat $httpxLocation | sort -u > temp
 mv temp $httpxLocation
+
+echo -e "\n[-] HTTPX done\n"
+
+if [[ -f $HOME/.recon-data/$target/latest-live-domains ]]; then
+	changes=$(comm -23 $HOME/.recon-data/$target/latest-live-domains $HOME/.recon-data/$target/live-domains)
+	mv $HOME/.recon-data/$target/latest-live-domains $HOME/.recon-data/$target/live-domains	
+	if [[ $changes != "" ]]; then
+		echo "New subdomains found on target ${target}:" | subdomain_monitor
+		spaces=$(echo $changes | head -n 1 | tr -cd ' \t' | wc -c)
+		message=""
+		for ((i=1;i<=$spaces+1;i++)); do
+			message+=$(echo $changes | cut -d ' ' -f $i)
+			message+="\n"
+			domain=$(echo $changes | cut -d ' ' -f $i)
+			python3 all-templates-nuclei.py $domain
+		done
+		echo $message | subdomain_monitor
+	fi
+fi
