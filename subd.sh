@@ -158,7 +158,7 @@ mv temp $httpxLocation
 
 echo -e "\n[-] HTTPX done\n"
 
-source $HOME/Slack/slack.sh
+source $HOME/tools/Slack/slack.sh
 
 if [[ -f $HOME/.recon-data/$target/latest-live-domains ]]; then
 	changes=$(comm -23 $HOME/.recon-data/$target/latest-live-domains $HOME/.recon-data/$target/live-domains)
