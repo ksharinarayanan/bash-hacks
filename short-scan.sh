@@ -56,7 +56,7 @@ fi
 run_all=1
 
 if [[ $run_all != "" ]]; then
-        echo -e "\n${cyan}All modules set to run...${reset}\n"
+        echo -e "\n${cyan}Target: ${target}${reset}\n"
         run_all=1
 else
         echo -e "\n${cyan}Modules will run on an input by input basis...${reset}\n"
