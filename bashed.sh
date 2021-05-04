@@ -182,7 +182,7 @@ if [[ ! -d $domainHeart/httpx ]]; then
 	       curr=$(pwd)
 	       mkdir $domainHeart/httpx
 	       cd $domainHeart/httpx
-	       httpx -l $subLocation/$target-subdomains -store-response -title -status-code -threads 77 -silent -no-color | tee result
+	       httpx -l $subLocation/$target-subdomains -title -status-code -threads 77 -silent -no-color | tee result
 	       echo -e "\n${cyan}The live domains are: \n$reset"
 	       cat result | grep -v "\[4\|\[5" | cut -d [ -f 1 | cut -d " " -f 1 | tee $domainHeart/live-domains
        	       echo -e "\n$reset"
@@ -221,7 +221,7 @@ if [[ ! -f $domainHeart/.nuclei-output ]]; then
 			exit 1
 		fi
 		
-		nuclei -l $domainHeart/live-domains -t brute-force/ -t panels/ -t technologies/ -t cves/ -t tokens/ -t dns/ -t security-misconfiguration/ -t vulnerabilities/ -t basic-detections/ -t files/ -t subdomain-takeover/ -t workflows/ -silent -o $domainHeart/nuclei-output
+		nuclei -l $domainHeart/live-domains -t ~/nuclei-templates/ -silent -o $domainHeart/nuclei-output
 
 		touch $domainHeart/.nuclei-output
 	fi
